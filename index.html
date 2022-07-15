@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- import de mon fichier style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- import de mon fichier js -->
+    <script src="./assets/JS/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import de axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <button id="btw-display">Inscrivez-vous!</button>
+    <div class="cadre">
+      <div class="hidden">
+        <form action="contact-form">
+          <input
+            class="text"
+            type="text"
+            placeholder="firstname"
+            name="firstname"
+            id="firstname"
+          />
+          <input
+            class="text"
+            type="text"
+            placeholder="lastname"
+            name="lastname"
+            id="lastname"
+          />
+          <input
+            class="text"
+            type="email"
+            placeholder="email"
+            name="email"
+            id="email"
+          />
+          <input
+            class="text"
+            type="text"
+            placeholder="subject"
+            name="subject"
+            id="subject"
+          />
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <input class="thebutton" type="submit" value="Envoyez le message" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

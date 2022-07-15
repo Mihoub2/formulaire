@@ -9,8 +9,9 @@ $.addEventListener("DOMContentLoaded", () => {
     $.querySelector(".hidden").classList.toggle("display");
   });
 
-  $.querySelector("contact-form").addEventListener("submit", async (event) => {
+  $.querySelector("#contact-form").addEventListener("submit", async (event) => {
     event.preventDefault();
+    console.log("click");
     const response = await axios.post("http://localhost:3000/send-email", {
       firstname: $.querySelector("#firstname").value,
       lastname: $.querySelector("#lastname").value,
